@@ -115,9 +115,5 @@ io.on('connection', (socket: Socket) => {
     })
 })
 
-app.get('/', (req, res) => {
-    res.send(200)
-})
-
 const PORT = process.env.PORT || 3000
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`))

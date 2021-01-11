@@ -96,8 +96,5 @@ io.on('connection', function (socket) {
         }
     });
 });
-app.get('/', function (req, res) {
-    res.send(200);
-});
 var PORT = process.env.PORT || 3000;
 server.listen(PORT, function () { return console.log("Server running on port " + PORT); });
