@@ -8,7 +8,7 @@ var uuid_1 = require("uuid");
 var app = express();
 var server = http_1.createServer(app);
 var io = new socket_io_1.Server(server);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 var AVAILABLE_PLAYERS = [];
 var ROOMS = [];
 var findAPlayer = function () {
